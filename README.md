@@ -1,8 +1,8 @@
-## dump-init
+## dumb-init
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-dump-init.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-dump-init) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-dump--init-blue.svg)](https://galaxy.ansible.com/Oefenweb/dump-init/)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-dumb-init.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-dumb-init) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-dumb--init-blue.svg)](https://galaxy.ansible.com/Oefenweb/dumb-init/)
 
-Set up (the latest or a specific version of) [dump-init](https://github.com/Yelp/dumb-init) in Debian-like systems.
+Set up (the latest or a specific version of) [dumb-init](https://github.com/Yelp/dumb-init) in Debian-like systems.
 
 #### Requirements
 
@@ -10,8 +10,8 @@ None
 
 #### Variables
 
-* `dump_init_version` [default: `1.2.0`]: Version to install
-* `dump_init_install_prefix` [default: `/usr/local/bin`]: Install prefix
+* `dumb_init_version` [default: `1.2.0`]: Version to install
+* `dumb_init_install_prefix` [default: `/usr/local/bin`]: Install prefix
 
 ## Dependencies
 
@@ -23,7 +23,7 @@ None
 ---
 - hosts: all
   roles:
-    - dump-init
+    - dumb-init
 ```
 
 #### License
@@ -36,4 +36,4 @@ Mischa ter Smitten
 
 #### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/Oefenweb/ansible-dump-init/issues)!
+Are [welcome](https://github.com/Oefenweb/ansible-dumb-init/issues)!

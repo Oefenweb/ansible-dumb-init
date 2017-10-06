@@ -54,10 +54,10 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
-  # Test dump-init installation
+  # Test dumb-init installation
   - >
-    which dump-init
-    | grep -q 'dump-init'
+    which dumb-init
+    | grep -q 'dumb-init'
     && (echo 'Availability test: pass' && exit 0)
     || (echo 'Availability test: fail' && exit 1)
 

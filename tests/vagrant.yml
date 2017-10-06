@@ -1,4 +1,4 @@
-# test file for dump-init
+# test file for dumb-init
 ---
 - hosts: all
   remote_user: vagrant

@@ -1,7 +1,7 @@
-# tasks file for dump-init
+# tasks file for dumb-init
 ---
 - include: install-binary.yml
   tags:
     - configuration
-    - dump-init
-    - dump-init-install-binary
+    - dumb-init
+    - dumb-init-install-binary
