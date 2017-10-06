@@ -1,0 +1,4 @@
+# defaults file for dump-init
+---
+dump_init_version: '1.2.0'
+dump_init_install_prefix: /usr/local/bin
