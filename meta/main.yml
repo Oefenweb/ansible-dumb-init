@@ -1,6 +1,7 @@
 # meta file for dumb-init
 ---
 galaxy_info:
+  role_name: dumb-init
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up (the latest or a specific version of) dumb-init in Debian-like systems
@@ -12,6 +13,7 @@ galaxy_info:
         - precise
         - trusty
         - xenial
+        - bionic
     - name: Debian
       versions:
         - wheezy
