@@ -1,6 +1,7 @@
-# meta file for dumb-init
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: dumb-init
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.

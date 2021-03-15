@@ -1,4 +1,4 @@
-# tasks file for dumb-init
+# tasks file
 ---
 - include: install-binary.yml
   tags:

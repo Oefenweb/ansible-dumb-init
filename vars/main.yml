@@ -1,4 +1,4 @@
-# vars file for dumb-init
+# vars file
 ---
 dumb_init_downloads_path: /var/lib/ansible/dumb-init/downloads
 dumb_init_machine_map:
