@@ -1,7 +1,7 @@
 ## dumb-init
 
-[![Build Status](https://travis-ci.org/Oefenweb/ansible-dumb-init.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-dumb-init)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-dumb--init-blue.svg)](https://galaxy.ansible.com/Oefenweb/dumb-init/)
+[![CI](https://github.com/Oefenweb/ansible-dumb-init/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-dumb-init/actions?query=workflow%3ACI)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-dumb--init-blue.svg)](https://galaxy.ansible.com/Oefenweb/dumb_init/)
 
 Set up (the latest or a specific version of) [dumb-init](https://github.com/Yelp/dumb-init) in Debian-like systems.
 
