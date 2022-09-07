@@ -1,7 +1,7 @@
 # tasks file
 ---
 - name: create (download) directory
-  file:
+  ansible.builtin.file:
     path: "{{ dumb_init_downloads_path }}"
     state: directory
     owner: root
@@ -12,7 +12,7 @@
     - dumb-init-install-binary-download-directory
 
 - name: download
-  get_url:
+  ansible.builtin.get_url:
     url: "https://github.com/Yelp/dumb-init/releases/download/v{{ dumb_init_version }}/dumb-init_{{ dumb_init_version }}_{{ dumb_init_machine_map[ansible_machine] }}"
     dest: "{{ dumb_init_downloads_path }}/dumb-init-{{ dumb_init_machine_map[ansible_machine] }}-{{ dumb_init_version }}"
     owner: root
@@ -23,7 +23,7 @@
     - dumb-init-install-binary-download-get
 
 - name: install
-  file:
+  ansible.builtin.file:
     src: "{{ dumb_init_downloads_path }}/dumb-init-{{ dumb_init_machine_map[ansible_machine] }}-{{ dumb_init_version }}"
     dest: "{{ dumb_init_install_prefix }}/dumb-init"
     state: link
