@@ -1,6 +1,7 @@
 # tasks file
 ---
-- ansible.builtin.include: install-binary.yml
+- name: install binary
+  ansible.builtin.import_tasks: install-binary.yml
   tags:
     - configuration
     - dumb-init
