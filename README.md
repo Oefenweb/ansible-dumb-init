@@ -24,7 +24,7 @@ None
 ---
 - hosts: all
   roles:
-    - dumb-init
+    - oefenweb.dumb-init
 ```
 
 #### License
