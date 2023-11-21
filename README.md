@@ -11,7 +11,7 @@ None
 
 #### Variables
 
-* `dumb_init_version` [default: `1.2.2`]: Version to install
+* `dumb_init_version` [default: `1.2.5`]: Version to install
 * `dumb_init_install_prefix` [default: `/usr/local/bin`]: Install prefix
 
 ## Dependencies
