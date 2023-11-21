@@ -13,8 +13,8 @@
 
 - name: download
   ansible.builtin.get_url:
-    url: "https://github.com/Yelp/dumb-init/releases/download/v{{ dumb_init_version }}/dumb-init_{{ dumb_init_version }}_{{ dumb_init_machine_map[ansible_machine] }}"
-    dest: "{{ dumb_init_downloads_path }}/dumb-init-{{ dumb_init_machine_map[ansible_machine] }}-{{ dumb_init_version }}"
+    url: "https://github.com/Yelp/dumb-init/releases/download/v{{ dumb_init_version }}/dumb-init_{{ dumb_init_version }}_{{ ansible_machine }}"
+    dest: "{{ dumb_init_downloads_path }}/dumb-init-{{ ansible_machine }}-{{ dumb_init_version }}"
     owner: root
     group: root
     mode: 0755
@@ -24,7 +24,7 @@
 
 - name: install
   ansible.builtin.file:
-    src: "{{ dumb_init_downloads_path }}/dumb-init-{{ dumb_init_machine_map[ansible_machine] }}-{{ dumb_init_version }}"
+    src: "{{ dumb_init_downloads_path }}/dumb-init-{{ ansible_machine }}-{{ dumb_init_version }}"
     dest: "{{ dumb_init_install_prefix }}/dumb-init"
     state: link
     force: true
